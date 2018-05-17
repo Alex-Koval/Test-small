@@ -1,0 +1,36 @@
+//@mixin font-face( $font-family, $file-path, $weight: normal, $style: normal, $file-format: ttf)
+//{
+//  @font-face {
+//    font-family: $font-family;
+//    src: url($file-path) format($file-format);
+//    font-weight: $weight;
+//    font-style: $style;
+//  }
+//}
+//
+//@include font-face( 'Lobster', '../fonts/lobster/lobster.ttf', 400, normal, ttf);
+//@include font-face( 'Lobster', '../fonts/lobster/lobster.woff', 400, normal, woff);
+//@include font-face( 'Lobster', '../fonts/lobster/lobster.woff2', 400, normal, woff2);
+
+
+
+@font-face {
+  font-family: 'Lobster';
+  src: local('Lobster'), url('../fonts/lobster/lobster.woff2') format('woff2'), url('../fonts/lobster/lobster.woff') format('woff'), url('../fonts/lobster/lobster.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), local('OpenSans'), url('../fonts/opensans/normal/opensans.woff2') format('woff2'), url('../fonts/opensans/normal/opensans.woff') format('woff'), url('../fonts/opensans/normal/opensans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('../fonts/opensans/semibold/opensanssemibold.woff2') format('woff2'), url('../fonts/opensans/semibold/opensanssemibold.woff') format('woff'), url('../fonts/opensans/semibold/opensanssemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
